@@ -20,7 +20,7 @@ const Register = () => {
     confirmPassword: yup
       .string()
       .oneOf(
-        [yup.ref("Senha")],
+        [yup.ref("password")],
         "A confirmação da senha deve ser igual à senha"
       ),
     bio: yup.string().required("Requer descrição"),
